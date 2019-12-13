@@ -1,0 +1,21 @@
+runtime: php73
+
+handlers:
+
+- url: .*/js
+  static_dir: js
+  
+- url: .*/css
+  static_dir: css
+  
+- url: .*/images
+  static_dir: images
+  
+- url: .*/videos
+  static_dir: videos
+  
+- url: /.*
+  script: index.html
+  
+  error_handlers:
+  - file: defaulterror.html
