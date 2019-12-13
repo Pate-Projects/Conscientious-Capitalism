@@ -1,4 +1,4 @@
-runtime: php73
+runtime: php72
 
 handlers:
 
@@ -17,5 +17,3 @@ handlers:
 - url: /.*
   script: index.html
   
-  error_handlers:
-  - file: defaulterror.html
