@@ -1,0 +1,357 @@
+/** Conscientious Capitalism  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+
+/** Home Page  **/
+
+#Home_Page {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#Video_Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#Video_Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightskyblue;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+}
+
+#Call_To_Action {
+	position: absolute;
+	width: 842px;
+	height: 156px;
+	left: 137px;
+	top: 168px;
+	overflow: visible;
+}
+
+#Join_The_Club_Button {
+	position: absolute;
+	width: 125px;
+	height: 31px;
+	left: 150px;
+	top: 125px;
+	overflow: visible;
+    cursor: pointer;
+}
+
+.Join_The_Club_Rectangle {
+	position: absolute;
+	overflow: visible;
+	width: 125px;
+	height: 31px;
+	left: 0px;
+	top: 0px;
+}
+
+#Join_The_Club_Label {
+	position: absolute;
+	left: 13px;
+	top: 7px;
+	overflow: visible;
+	width: 100px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Franklin Gothic Demi;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
+
+#Learn_More_Button {
+	position: absolute;
+	width: 125px;
+	height: 31px;
+	left: 0px;
+	top: 125px;
+	overflow: visible;
+    cursor: pointer;
+}
+
+.Learn_More_Rectangle {
+	position: absolute;
+	overflow: visible;
+	width: 125px;
+	height: 31px;
+	left: 0px;
+	top: 0px;
+}
+
+#Learn_More_Label {
+	position: absolute;
+	left: 18px;
+	top: 7px;
+	overflow: visible;
+	width: 90px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Franklin Gothic Demi;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
+
+#Title {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 838px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(255,255,255,1);
+}
+
+#Subtitle {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	overflow: visible;
+	width: 843px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+
+
+
+/**  Mission Page  **/
+
+#Our_Mission {
+	position: relative;
+    overflow: visible;
+    background-color: rgba(255,255,255,1);
+	width: 100%;
+	height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#Form_Container {
+	position: absolute;
+	overflow: visible;
+    background-color: rgba(60,105,151,1);
+	width: 94%;
+	top: 100px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 45px;
+}
+
+#Form_Container h1 {
+    text-align: center;
+    font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 60px;
+    padding: 20px;
+    padding-top: 100px;
+    margin: 15px;
+    z-index: 1;
+    color: rgba(255,255,255,1);
+}
+
+#Form_Container p {
+    text-align: center;
+    font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    color: rgba(255,255,255,1);
+    padding-bottom: 125px;
+}
+
+
+
+/**  Menu  **/
+
+#Menu {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	left: 0px;
+	top: 35px;
+	overflow: visible;
+}
+
+#Menu_Item_Membership {
+	position: relative;
+	float: right;
+	top: 5px;
+	overflow: visible;
+	width: 157px;
+    padding-right: 45px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(60,105,151,1);
+    cursor: pointer;
+}
+
+#Menu_Item_Our_Mission {
+	position: relative;
+	float: right;
+	top: 5px;
+	overflow: visible;
+	width: 152px;
+    padding-right:30px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(60,105,151,1);
+    cursor: pointer;
+}
+
+#Menu_Item_Home_Page {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 419px;
+    padding-left: 45px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: rgba(60,105,151,1);
+    cursor: pointer;
+}
+
+
+
+/** Membership Page  **/
+
+.Input_Field_Section {
+	position: relative;
+	width: 520px;
+	height: 117px;
+	overflow: visible;
+    margin: auto;
+    padding-top: 75px;
+}
+
+.Input_Field_Section_Title {
+	position: relative;
+	width: 520px;
+	overflow: visible;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    white-space: nowrap;
+    text-align: left;
+	font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: rgba(255,255,255,1);
+}
+
+.Input_Field {
+	position: absolute;
+	left: 46px;
+	top: 41px;
+	overflow: visible;
+	width: 139px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Franklin Gothic Book;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+
+.Input_Field input {
+    position: absolute;
+    left: 170px;
+    top: 0px;
+    width: 270px;
+    height: 40px;
+}
+
+.Submit_Input_Field {
+    position: relative;
+    margin-top: -30px;
+    text-align: center;
+    font-family: Corporate A;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+
+#Submit_Button_Group {
+    margin-top: 75px;
+    padding-bottom: 75px;
+    cursor: pointer;
+}
+
+#Border {
+	position: absolute;
+	width: 520px;
+	height: 117px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+
+.Rectangle_A {
+	position: absolute;
+	overflow: visible;
+	width: 510px;
+	height: 107px;
+	left: 0px;
+	top: 0px;
+}
+
+.Rectangle_B {
+	position: absolute;
+	overflow: visible;
+	width: 510px;
+	height: 107px;
+	left: 10px;
+	top: 10px;
+}

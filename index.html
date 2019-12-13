@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Conscientious Capitalism</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/style.css"/>
+    <script id="applicationScript" type="text/javascript">
+        function homePage() {
+            document.location.href = "./index.html";
+        }
+        function missionPage() {
+            document.location.href = "./mission.html";
+        }
+        function membershipPage() {
+            document.location.href = "./membership.html";
+        }
+    </script>
+</head>
+    
+<body>
+    
+<div id="Home_Page">
+    
+    <div id="Video_Container">
+        <div id="Video_Overlay"></div>
+        <video autoplay loop muted>
+            <source src="video/ManhattanClip.mp4" type="video/mp4">
+            <!-- add additonal video type/formats later -->
+        </video>
+    </div>
+    
+	<div id="Call_To_Action">
+        
+            <div id="Join_The_Club_Button" onclick="membershipPage()">
+			 <svg class="Join_The_Club_Rectangle">
+				<rect fill="rgba(60,105,151,1)" id="Join_The_Club_Rectangle" rx="0" ry="0" x="0" y="0" width="125" height="31">
+				</rect>
+			 </svg>
+			 <div id="Join_The_Club_Label">
+				<span>JOIN THE CLUB</span>
+			 </div>
+		  </div>
+        
+		  <div id="Learn_More_Button" onclick="missionPage()">
+			<svg class="Learn_More)Rectangle">
+				<rect fill="rgba(60,105,151,1)" id="Learn_More_Rectangle" rx="0" ry="0" x="0" y="0" width="125" height="31">
+				</rect>
+			</svg>
+			<div id="Learn_More_Label">
+				<span>LEARN MORE</span>
+			</div>
+		  </div>
+        
+		<div id="Title">
+			<span>Conscientious Capitalism</span>
+		</div>
+        
+		<div id="Subtitle">
+			<span>Striving to do what is right for the community and our environment.</span>
+		</div>
+        
+	</div>
+    
+</div>
+    
+</body>
+    
+</html>

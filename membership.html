@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Membership</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/style.css"/>
+    <script id="applicationScript" type="text/javascript">
+        function homePage() {
+            document.location.href = "./index.html";
+        }
+        function missionPage() {
+            document.location.href = "./mission.html";
+        }
+        function membershipPage() {
+            document.location.href = "./membership.html";
+        }
+    </script>
+    <script id="googleSheetsScript" type="text/javascript">
+        var $form = $('form#Membership_Form'),
+        url = 'https://script.google.com/macros/s/AKfycbw4LkqRfNoG0t4TcKlkw3OeOkxzbUuGDFr2pXhLAGXEE2JPTx2W/exec'
+
+        $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+        }).success(
+            document.location.href = "./thankyou.html";
+        );
+        })
+    </script>
+</head>
+    
+<body>
+    
+    <div id="Membership">
+    
+        <div id="Form_Container">
+        
+            <h1>Membership</h1>
+            
+            <p>Prospective members must be nominated by two existing members. <br/>If you’d like to start your application, please fill out the form below.</p>
+            
+            <form id="Membership_Form">
+            
+                <div id="First_Name_Group" class="Input_Field_Section">
+
+                    <div id="First_Name" class="Input_Field">
+                        <span>First Name</span>
+                        <input type="text" name="firstname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div id="Last_Name_Group" class="Input_Field_Section">
+
+                    <div id="Last_Name" class="Input_Field">
+                        <span>Last Name</span>
+                        <input type="text" name="lastname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div id="Gender_Group" class="Input_Field_Section">
+
+                    <div id="Gender" class="Input_Field">
+                        <span>Gender</span>
+                        <input type="text" name="gender" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_5" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Birthdate_Group" class="Input_Field_Section">
+
+                    <div id="Birthdate" class="Input_Field">
+                        <span>Birthdate</span>
+                        <input type="text" name="birthdate" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Address_Group" class="Input_Field_Section">
+
+                    <div id="Address" class="Input_Field">
+                        <span>Address</span>
+                        <input type="text" name="address" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_9" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="City_Group" class="Input_Field_Section">
+
+                    <div id="City" class="Input_Field">
+                        <span>City</span>
+                        <input type="text" name="city" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_11" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="State_Group" class="Input_Field_Section">
+
+                    <div id="State" class="Input_Field">
+                        <span>State</span>
+                        <input type="text" name="state" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Zip_Group" class="Input_Field_Section">
+
+                    <div id="Zip" class="Input_Field">
+                        <span>Zip Code</span>
+                        <input type="text" name="zip" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_15" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Country_Group" class="Input_Field_Section">
+
+                    <div id="Country" class="Input_Field">
+                        <span>Country</span>
+                        <input type="text" name="country" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_17" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_18" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Telephone_Group" class="Input_Field_Section">
+
+                    <div id="Telephone" class="Input_Field">
+                        <span>Telephone</span>
+                        <input type="text" name="telephone" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_19" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_20" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Email_Group" class="Input_Field_Section">
+
+                    <div id="Email" class="Input_Field">
+                        <span>Email</span>
+                        <input type="text" name="email" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_21" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_22" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div class="Input_Field_Section_Title"><span>First Proposer</span></div>
+                
+                <div id="Proposer1_First_Name_Group" class="Input_Field_Section">
+
+                    <div id="Proposer1_First_Name" class="Input_Field">
+                        <span>First Name</span>
+                        <input type="text" name="proposer1firstname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_23" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_24" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div id="Proposer1_Last_Name_Group" class="Input_Field_Section">
+
+                    <div id="Proposer1_Last_Name" class="Input_Field">
+                        <span>Last Name</span>
+                        <input type="text" name="proposer1lastname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_25" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_26" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Proposer1_Email_Group" class="Input_Field_Section">
+
+                    <div id="Proposer1_Email" class="Input_Field">
+                        <span>Email</span>
+                        <input type="text" name="proposer1email" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_27" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_28" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div class="Input_Field_Section_Title"><span>Second Proposer</span></div>
+                
+                <div id="Proposer2_First_Name_Group" class="Input_Field_Section">
+
+                    <div id="Proposer2_First_Name" class="Input_Field">
+                        <span>First Name</span>
+                        <input type="text" name="proposer2firstname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_29" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div id="Proposer2_Last_Name_Group" class="Input_Field_Section">
+
+                    <div id="Proposer2_Last_Name" class="Input_Field">
+                        <span>Last Name</span>
+                        <input type="text" name="proposer2lastname" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Proposer2_Email_Group" class="Input_Field_Section">
+
+                    <div id="Proposer2_Email" class="Input_Field">
+                        <span>Email</span>
+                        <input type="text" name="proposer2email" required="true">
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_33" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_34" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div id="Submit_Button_Group" class="Input_Field_Section" type="submit" id="submit-form">
+
+                    <div id="Submit_Button" class="Submit_Input_Field">
+                        <span>SUBMIT</span>
+                    </div>
+
+                    <div id="Border">
+                        <svg class="Rectangle_A">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_35" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                        <svg class="Rectangle_B">
+                            <rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_36" rx="0" ry="0" x="0" y="0" width="510" height="107">
+                            </rect>
+                        </svg>
+                    </div>
+
+                </div>
+            
+            </form>
+        
+        </div>
+	
+        <div id="Menu">
+		
+            <div onclick="membershipPage()" id="Menu_Item_Membership">
+			     <span>Membership</span>
+            </div>
+           
+            <div onclick="missionPage()" id="Menu_Item_Our_Mission">
+			     <span>Our Mission</span>
+            </div>
+           
+            <div onclick="homePage()" id="Menu_Item_Home_Page">
+                <span>Conscientious Capitalism</span>
+            </div>
+           
+	   </div>
+    
+    </div>
+    
+</body>
+    
+</html>
