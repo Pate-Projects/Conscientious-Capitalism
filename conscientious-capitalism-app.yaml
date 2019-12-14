@@ -1,5 +1,6 @@
 # Use the PHP 7.3 runtime (BETA) by replacing "php72" below with "php73"
-runtime: php72
+# runtime: php55 for php 5.5 (will be obsolete soon - need to learn appropraite settings for 7.2)
+# runtime: php72 for php 7.2 (latest stable version)
 
 # Defaults to "serve index.php" and "serve public/index.php". Can be used to
 # serve a custom PHP front controller (e.g. "serve backend/index.php") or to
@@ -7,4 +8,20 @@ runtime: php72
 #
 # entrypoint: serve index.php
 
-entrypoint: serve index.html
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+  
+- url: .*/js
+  static_dir: js
+  
+- url: .*/css
+  static_dir: css
+  
+- url: .*/images
+  static_dir: images
+  
+- url: /.*
+  script: index.html
